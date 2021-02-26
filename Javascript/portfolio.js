@@ -1,48 +1,40 @@
 "use strict";
-// //get modal content divs for project 1
-// let projectOneModal = document.querySelector("#project-one-modal");
-// let projectOneButton = document.querySelector("#project-one-button");
+//get all project previews
 
-// //get modal content divs for project 2
-// let projectTwoModal = document.querySelector("#project-two-modal");
-// let projectTwoButton = document.querySelector("#project-two-button");
+let linkIcons = document.querySelectorAll("i");
+let links = document.querySelectorAll(".footer-link");
+let previews = document.querySelectorAll(".project-preview");
+let previewTitles = document.querySelectorAll(".preview-title");
 
-// //get modal content divs for project 3
-// let projectThreeModal = document.querySelector("#project-three-modal");
-// let projectThreeButton = document.querySelector("#project-three-button");
+for(let i = 0; i < links.length; i++)
+{
+    links[i].onmouseover = function()
+    {
+        linkIcons[i].style.color = "#f0faf5";
+        console.log("changed icon color");
+    }
 
-// //open project one modal content when the project one button is clicked
-// projectOneButton.onclick = function ()
-// {
-//     projectOneModal.style.display = "block";
-// }
+    links[i].onmouseout = function()
+    {
+        linkIcons[i].style.color = "#00CE7D";
+        console.log("changed icon color");
+    }
+}
 
-// //open project one modal content when the project one button is clicked
-// projectTwoButton.onclick = function ()
-// {
-//     projectTwoModal.style.display = "block";
-// }
+for(let i = 0; i < previews.length; i++)
+{
+    previews[i].onmouseover = function()
+    {
+        previewTitles[i].style.animationName = "reveal-title";
+        previewTitles[i].style.animationDuration = "1s";
+        previewTitles[i].style.animationIterationCount = "1";
+        previewTitles[i].style.animationDirection = "normal";
+        previewTitles[i].style.animationFillMode = "forwards";
+    }
 
-// //open project one modal content when the project one button is clicked
-// projectThreeButton.onclick = function ()
-// {
-//     projectThreeModal.style.display = "block";
-// }
-
-// //close project one modal content when the user clicks outside of it
-// window.onclick = function(e)
-// {
-//     if(e.target == projectOneModal)
-//     {
-//         projectOneModal.style.display = "none";
-//     }
-//     else if(e.target == projectTwoModal)
-//     {
-//         projectTwoModal.style.display = "none";
-//     }
-//     else if(e.target == projectThreeModal)
-//     {
-//         projectThreeModal.style.display = "none";
-//     }
-// }
-
+    previews[i].onmouseout = function()
+    {
+        previewTitles[i].style.animationName = "";
+    }
+    
+}

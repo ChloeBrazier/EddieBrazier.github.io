@@ -3,145 +3,72 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Eddie Brazier</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Eddie Brazier - Portfolio</title>
+        <script src="https://kit.fontawesome.com/56967c5820.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
         <link href="portfolio.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="wrapper">
-            <header class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <img src="images/emerald_logo.png" alt="personal logo" id="logo">
-                    </div>
-                    <div class="col">
-                        <h1 id="title">Eddie Brazier - Game Designer</h1>
-                    </div>
-                    <div class = row>
-                        <a href="#wrapper" class="nav-link">Home</a>
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <a href="#about-me" class="nav-link">About Me</a>
-                    </div>
-                </div>
+            <header>
+                <h1>Eddie Brazier - Game Developer</h1>
+                <a href="index.html#about" id="about-link">About Me</a>
+                <a href="index.html#project-previews" id="projects-link">Projects</a>
+                <a href="index.html#contact" id="contact-link">Contact Me</a>
+                <a href="fun-stuff.html" id="fun-link">Random Stuff</a>
             </header>
-            <main class="container">
-                <div id="projects" class="col">
-                    <div class="row">
-                        <div class="project">
-                            <img class="thumbnail-image" src="images/shadows_thumb.png" alt="Ship of Shadows Title Screen">
-                            <h2><button id="project-four-button" data-toggle="modal" data-target="#project-four-modal">Ship of Shadows</button></h2>
-                            <div class="modal-wrapper" id="project-four-modal">
-                                <div class="modal-content" id="puppet-content">
-                                        <img src="images/shadows_display.png" alt="Ship of Shadows gameplay screenshot" class="display-image">
-                                        <div class="col">
-                                                <p class="display-text">Ship of Shadows is a puzzle-platformer based on the mysterious behaviors of objects under the ship's lights. 
-                                                The player must engage with three kinds of light to make it to the top of the ship and uncover the mystery as to how they got there.
-                                                </p>
-                                                <a href="https://patrickode.itch.io/ship-of-shadows" class="display-link">Play Online</a>
-                                                <h3 class="display-text">My Contributions:</h3>
-                                                <ul class="display-text">
-                                                        <li>
-                                                            Designed the “unequipped” and ‘candle” lighting mechanics 
-                                                        </li>
-                                                        <li>
-                                                            Implemented a finite state machine for the player
-                                                        </li>
-                                                        <li>
-                                                            Used special lighting cookies to create lighting that fit the retro graphical style
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="project">
-                            <img class="thumbnail-image" src="images/puppet_thumb.png" alt="A-maze-ing Marionette Title Screen">
-                            <h2><button id="project-one-button" data-toggle="modal" data-target="#project-one-modal">The A-maze-ing Marionette</button></h2>
-                            <div class="modal-wrapper" id="project-one-modal">
-                                <div class="modal-content" id="puppet-content">
-                                        <img src="images/puppet_display.png" alt="Marionette gameplay screenshot" class="display-image">
-                                        <div class="col">
-                                                <p class="display-text">The A-maze-ing marionette was a game jam game made for the RIT Game Dev Club's 2019 Day of the Dead Jam. You play 
-                                                        as a puppetmaster who controls a marionette through a maze full of traps! Be careful, or your strings may be snapped. Reaching the end of 
-                                                        the maze won't be easy.
-                                                </p>
-                                                <a href="https://eddiebrazier.itch.io/the-a-maze-ing-marionette" class="display-link">Download Here</a>
-                                                <h3 class="display-text">My Contributions:</h3>
-                                                <ul class="display-text">
-                                                        <li>
-                                                            Coded the boulder and pitfall traps
-                                                        </li>
-                                                        <li>
-                                                            Textured assets
-                                                        </li>
-                                                        <li>
-                                                            Created the live title screen scene
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="project">
-                            <img class="thumbnail-image" src="images/snowglobe_thumb.png" alt="project thumbnail">
-                            <h2><button id="project-two-button" data-toggle="modal" data-target="#project-two-modal">Snowglobe</button></h2>
-                            <div class="modal-wrapper" id="project-two-modal">
-                                <div class="modal-content" id="project-two-content">
-                                    <img src="images/snowglobe_display.png" alt="project 2 gameplay screenshot" class="display-image">
-                                    <div class="col">
-                                        <p class="display-text">
-                                            Explore a miniature winter wonderland and interact with the environment in Snowglobe! Watch out 
-                                            for shady snowmen dealing in candy canes, though...
-                                        </p>
-                                        <a href="https://eddiebrazier.itch.io/snowglobe" class="display-link">Download Here</a>
-                                        <h3 class="display-text">My Contributions:</h3>
-                                        <ul class="display-text">
-                                            <li>
-                                                Modeled and textured the sled, the sledding snowman, the candy cane, and the bench
-                                            </li>
-                                            <li>
-                                                Implemented the path-following candy cane guide and snowman sledding action
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div id="about">
+                <h2>About</h2>
+                <div id="about-contents">
+                    <img src="images/headshot.jpg" alt="it's me!">
+                    <p>Hey there! I'm Eddie Brazier! I'm a Game Design and Development major at RIT, and I love making interesting, silly, or just plain weird stuff! Whether it's 
+                        modding an existing game, working on a small solo project, or creating something as part of a team, I love flexing my creative muscles to help create unique 
+                        experiences. Designing, writing, and programming are what I do best. When I'm not working on games, I'm usually watching toku shows or building model kits. 
+                        I'm always ready to take on new game dev challenges!
+                    </p>
                 </div>
-            </main>
-            <footer class="container-fluid">
-                <div class="row align-items-center">
-                    <img src="images/headshot.jpg" alt="Eddie Brazier" id="headshot" class="col-sm">
-                    <div id="about-me" class="col-sm">
-                        <p>I'm Eddie Brazier, a Game Designer. I love working on exciting, weird, and out-there projects! Working on games
-                            is my #1 passion, but when I'm taking breaks from that I love to play them too! You can contact me at <span class="mail">ecb9413@rit.edu</span> or 
-                            <span class="mail">edwinbrazier01@gmail.com</span>.
-                        </p>
-                    </div>
-                    <div id="social-links" class="col-sm">
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/eddie-brazier" class="nav-link-footer">LinkedIn</a></li>
-                            <li><a href="https://github.com/EddieBrazier" class="nav-link-footer">GitHub</a></li>
-                            <li><a href="https://eddiebrazier.itch.io" class="nav-link-footer">itch.io</a></li>
-                            <li><a href="EddieBrazier_ResumeMarch2020.pdf" class="nav-link-footer">View Resume</a></li>
-                        </ul>
-                    </div>
-                    <div id="legal" class="col-sm">
-                        <p>Fonts used courtesy of Google Fonts</p>
-                        <p>Site built using Bootstrap</p>
-                    </div>
+            </div>
+            <img src="images/body_bg_3_layer2.png" alt="" id="moving-background">
+            <div id= "project-previews">
+                <h2 id="projects-header">Projects</h2>
+                <div id="vr-preview" class="project-preview">
+                    <a href="https://patrickode.github.io/IGME599-VR-Showcase/index.html">
+                        <img src="images/pockets_shadowed.png" alt="" class="shadowed-thumb"><img src="images/pockets_thumb.png" alt="" class="revealed-thumb">
+                    </a>
                 </div>
+                <h2 class="preview-title" id="project1-title">VR Study</h2>
+                <div id="second-preview" class="project-preview">
+                    <img src="images/puppet_shadowed.png" alt="" class="shadowed-thumb"><img src="images/puppet_thumb.png" alt="" class="revealed-thumb">
+                </div>
+                <h2 class="preview-title" id="project2-title">The A-maze-ing Marionette</h2>
+                <div id="third-preview" class="project-preview">
+                    <img src="images/snowglobe_shadowed.png" alt="" class="shadowed-thumb"><img src="images/snowglobe_thumb.png" alt="" class="revealed-thumb">
+                </div>
+                <h2 class="preview-title" id="project3-title">Snowglobe Demo</h2>
+                <div id="fourth-preview" class="project-preview">
+                    <img src="images/ship_shadowed.png" alt="" class="shadowed-thumb"><img src="images/shadows_thumb.png" alt="" class="revealed-thumb">
+                </div>
+                <h2 class="preview-title" id="project4-title">Ship of Shadows</h2>
+                <div id="fifth-preview" class="project-preview">
+                    <img src="images/dream_shadowed.png" alt="" class="shadowed-thumb"><img src="images/dream_thumb.png" alt="" class="revealed-thumb">
+                </div>
+                <h2 class="preview-title" id="project5-title">Dream(s)</h2>
+                <div id="sixth-preview" class="project-preview">
+                    <img src="images/uprooted_shadowed.png" alt="" class="shadowed-thumb"><img src="images/uprooted_thumb.png" alt="" class="revealed-thumb">
+                </div>
+                <h2 class="preview-title" id="project6-title">UpRooted</h2>
+            </div>
+            <footer id="contact">
+                <h2>Contact & Resume</h2>
+                <span class="footer-link"><a href="mailto:ecb9413@g.rit.edu"><i class="fas fa-envelope"></i> E-mail</a></span>
+                <span class="footer-link"><a href="https://www.linkedin.com/in/eddie-brazier/"><i class="fab fa-linkedin"></i> Linkedin</a></span>
+                <span class="footer-link"><a href="https://github.com/EddieBrazier"><i class="fab fa-github-square"></i> GitHub</a></span>
+                <span class="footer-link"><a href="https://eddiebrazier.itch.io/"><i class="fab fa-itch-io"></i> itch.io</a></span>
+                <span class="footer-link"><a href="https://twitter.com/EddieBrazier2"><i class="fab fa-twitter-square"></i> Twitter</a></span>
+                <span class="footer-link"><a href="index.html"><i class="fas fa-file-alt"></i> Resume</a></span>
             </footer>
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="Javascript/portfolio.js"></script>
     </body>
 </html>

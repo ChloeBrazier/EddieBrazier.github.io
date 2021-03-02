@@ -94,10 +94,15 @@ p
 }
 
 /* project 1 styling */
+#fun-project-1
+{
+    margin: 0px;
+}
+
 #fun-project-1 img
 {
     max-height: 80%;
-    margin: 0px;
+    margin: 1rem;
     border: 0.2rem solid black;
 }
 
@@ -116,11 +121,17 @@ p
     justify-self: center;
     font-size: 1.7rem;
     background-color: #00CE7D;
+    margin: 2rem;
     padding: 1.5rem;
     border: 0.2rem solid black;
 }
 
 /* project 2 styling */
+#fun-project-2
+{
+    margin: 0px;
+}
+
 #fun-project-2 img
 {
     max-height: 80%;
@@ -141,6 +152,11 @@ p
 }
 
 /* project 3 styling */
+#fun-project-3
+{
+    margin: 0px;
+}
+
 #fun-project-3 img
 {
     max-height: 50%;
@@ -220,14 +236,14 @@ footer a:hover
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-areas: "header header header"
-                         ". main-header ."
-                         ". project1 ."
-                         ". project2 ."
-                         ". project3 ."
-                         "footer footer footer";
+    grid-template-areas: "header"
+                         "main-header"
+                         "project1"
+                         "project2"
+                         "project3"
+                         "footer";
     grid-template-rows: 1fr 5fr 5fr 5fr 3fr;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
 }
 header
 {
@@ -262,13 +278,13 @@ footer
 #fun-project-1
 {
     display: grid;
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     grid-template-areas: "project1-header project1-header"
                          "website-image1 project1-description"
                          "website-image2 project1-description";
     grid-template-rows: 10% 45% 45% auto;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 0.8fr;
 }
 #website-image-1
 {
@@ -290,7 +306,7 @@ footer
 #fun-project-2
 {
     display: grid;
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     grid-template-areas: "project2-header project2-header"
                          "project2-description bone-img-1"
@@ -318,13 +334,12 @@ footer
 #fun-project-3
 {
     display: grid;
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
     grid-template-areas: "project3-header project3-header"
-                         "britney-img project3-description"
                          "britney-img project3-description";
-    grid-template-rows: 10% 45% 45% auto;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 10% 90% auto;
+    grid-template-columns: 0.5fr 1.0fr;
 }
 #toxic-mod-img
 {
@@ -375,73 +390,7 @@ header h1
 
 
 /* Responsive grid styling */
-@media screen and (max-width: 480px)
+@media screen and (max-width: 1495px)
 {
-    /* #wrapper
-    {
-        grid-template-areas: "header"
-                             "projects"
-                             "footer";
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-    header
-    {
-        grid-template-areas: "logo"
-                             "title"
-                             "links";
-        grid-template-rows: 0.5fr 0.5fr 1fr;
-        grid-template-columns: 1fr;
-    } */
-    h1
-    {
-        font-size: 15pt;
-        /* margin-right: 1rem; */
-    }
-    /* header > img
-    {
-        height: auto;
-        width: 100%;
-    }
-    header > ul
-    {
-        flex-direction: column;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-    }
-    header > ul > li
-    {
-        border-left: none;
-        border-bottom: 0.3rem solid #07bc6b;
-        font-size: 60pt;
-    }
-    footer
-    {
-        flex-direction: column;
-    }
-    #headshot
-    {
-        height: 100%;
-    }
-    .thumbnail-image
-    {
-        height: auto;
-    }
-    #about-me > p
-    {
-        font-size: 20pt;
-    } */
-    #social-links > ul
-    {
-        font-size: 30pt;
-    }
-    header > ul > li
-    {
-        margin-bottom: 0.2rem;
-    }
-    .display-text
-    {
-        font-size: 0.8rem;
-    }
+    
 }

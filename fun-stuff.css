@@ -102,7 +102,7 @@ p
 #fun-project-1 img
 {
     max-height: 80%;
-    margin: 1rem;
+    margin: 2rem;
     border: 0.2rem solid black;
 }
 
@@ -135,7 +135,7 @@ p
 #fun-project-2 img
 {
     max-height: 80%;
-    margin: 0px;
+    margin: 2rem;
     border: 0.2rem solid black;
 }
 
@@ -160,6 +160,7 @@ p
 #fun-project-3 img
 {
     max-height: 50%;
+    margin: 2rem;
     justify-self: center;
     align-self: center;
     border: 0.2rem solid black;
@@ -284,7 +285,7 @@ footer
                          "website-image1 project1-description"
                          "website-image2 project1-description";
     grid-template-rows: 10% 45% 45% auto;
-    grid-template-columns: 0.5fr 0.8fr;
+    grid-template-columns: 0.5fr 0.95fr;
 }
 #website-image-1
 {
@@ -312,7 +313,7 @@ footer
                          "project2-description bone-img-1"
                          "project2-description bone-img-2";
     grid-template-rows: 10% 45% 45% auto;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 0.8fr 0.5fr;
 }
 #bone-1
 {
@@ -390,7 +391,44 @@ header h1
 
 
 /* Responsive grid styling */
-@media screen and (max-width: 1495px)
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
 {
-    
+    /* re-style project grids */
+    #fun-project-1
+    {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: "project1-header"
+                             "website-image1"
+                             "website-image2"
+                             "project1-description";
+        grid-template-rows: 10% 30% 30% 30% auto;
+        grid-template-columns: 1fr;
+    }
+
+    #fun-project-2
+    {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: "project2-header"
+                            "bone-img-1"
+                            "bone-img-2"
+                            "project2-description";
+        grid-template-rows: 10% 30% 30% 30%auto;
+        grid-template-columns: 1.0fr;
+    }
+
+    #fun-project-3
+    {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: "project3-header"
+                            "britney-img"
+                            "project3-description";
+        grid-template-rows: 10% 45% 45% auto;
+        grid-template-columns: 1.0fr;
+    }
 }

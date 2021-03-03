@@ -390,8 +390,10 @@ header h1
 
 
 
-/* Responsive grid styling */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) 
+
+/* -------- Responsive grid styling -------- */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 1350px) 
 {
     /* re-style project grids */
     #fun-project-1
@@ -430,5 +432,16 @@ header h1
                             "project3-description";
         grid-template-rows: 10% 45% 45% auto;
         grid-template-columns: 1.0fr;
+    }
+
+    .project-desc
+    {
+        font-size: 9pt;
+        width: 100%;
+    }
+
+    #fun-project-3 img
+    {
+        max-height: 100%;
     }
 }

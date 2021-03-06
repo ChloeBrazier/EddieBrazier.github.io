@@ -77,7 +77,7 @@ header a:hover
     background-color: #00CE7D;
     padding: 0px;
     margin: 0px;
-    width: 100%;
+    /* max-width: 100%; */
     position: relative;
     white-space: pre-wrap;
 }
@@ -97,6 +97,7 @@ header a:hover
     left: 0px;
     width: 100%;
     height: 100%;
+    /* max-height: 100%; */
 }
 
 .preview-title
@@ -136,7 +137,7 @@ body
     background-image: url("images/body_bg_3.png");
     background-position: center;
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: inherit;
 
     /* background-attachment: scroll, fixed, scroll;
     background-position: center;
@@ -230,7 +231,7 @@ footer a:hover
     height: 50vh;
     grid-template-areas: ". . about-img about-text .";
     grid-template-rows: 10fr;
-    grid-template-columns: 0.5fr 0.5fr 1fr 2fr 0.5fr;
+    grid-template-columns: 10% 10% 23% 46% 10%;
 }
 #about img
 {
@@ -278,11 +279,11 @@ header
 {
     display: grid;
     width: 100vw;
-    height: 40vh;
+    height: 15vh;
     grid-template-areas: "header-h1 header-h1 header-h1 header-h1"
                          "about projects contact fun";
-    grid-template-rows: 0.2fr 0.2fr;
-    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 header h1
 {
@@ -317,10 +318,8 @@ header h1
                          "project1-title . project2-title . project3-title"
                          ". . . . ."
                          "project4 . project5 . project6"
-                         "project4-title . project5-title . project6-title"
-                         ". . . . ."
-                         "project7 . project8 . project9";
-    grid-template-rows: 0.2fr 1fr 0.3fr 0.2fr 1fr 0.3fr 0.2fr 1fr;
+                         "project4-title . project5-title . project6-title";
+    grid-template-rows: 10% 20% 20% 10% 20% 20%;
     grid-template-columns: 1fr 0.3fr 1fr 0.3fr 1fr;
 }
 #projects-header
@@ -376,74 +375,67 @@ header h1
     grid-area: project5-title;
 }
 
-/* Responsive grid styling */
-@media screen and (max-width: 480px)
+/* -------- Responsive grid styling -------- */
+
+@media screen and (min-width : 320px) and (max-width : 1350px) 
 {
-    /* #wrapper
-    {
-        grid-template-areas: "header"
-                             "projects"
-                             "footer";
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
+    /* header and footer */
     header
     {
-        grid-template-areas: "logo"
-                             "title"
-                             "links";
-        grid-template-rows: 0.5fr 0.5fr 1fr;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #main-header
+    {
+        font-size: 25px;
+    }
+
+    /* re-style grid wrapper */
+    #wrapper
+    {
+        grid-template-areas: "header"
+                            "about"
+                            "projects"
+                            "footer";
         grid-template-columns: 1fr;
-    } */
-    h1
-    {
-        font-size: 15pt;
-        /* margin-right: 1rem; */
     }
-    /* header > img
+
+    #project-previews
     {
-        height: auto;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: "projects-header"
+                            "project1"
+                            "project1-title"
+                            "project2"
+                            "project2-title"
+                            "project3"
+                            "project3-title"
+                            "project4"
+                            "project4-title"
+                            "project5"
+                            "project5-title"
+                            "project6"
+                            "project6-title";
+        grid-template-rows: 10% 20% auto;
+        grid-template-columns: 1fr;
     }
-    header > ul
+
+    .project-preview
     {
-        flex-direction: column;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        padding-left: 0rem;
-    }
-    header > ul > li
-    {
-        border-left: none;
-        border-bottom: 0.3rem solid #07bc6b;
-        font-size: 60pt;
-    }
-    footer
-    {
-        flex-direction: column;
-    }
-    #headshot
-    {
+        justify-self: center;
+        align-content: center;
         height: 100%;
+        max-width: 100%;
     }
-    .thumbnail-image
+    
+}
+
+@media screen and (min-width : 320px) and (max-width : 375px) 
+{
+    header h1
     {
-        height: auto;
-    }
-    #about-me > p
-    {
-        font-size: 20pt;
-    } */
-    #social-links > ul
-    {
-        font-size: 30pt;
-    }
-    header > ul > li
-    {
-        margin-bottom: 0.2rem;
-    }
-    .display-text
-    {
-        font-size: 0.8rem;
+        font-size: 25px;
     }
 }

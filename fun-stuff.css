@@ -362,7 +362,7 @@ header
 {
     display: grid;
     width: 100vw;
-    height: 30vh;
+    height: 15vh;
     grid-template-areas: "header-h1 header-h1 header-h1 header-h1"
                          "about projects contact fun";
     grid-template-rows: 50% 50%;
@@ -408,6 +408,13 @@ header h1
     }
 
     /* re-style project grids */
+
+    header
+    {
+        width: 100vw;
+        height: 30vh;
+    }
+
     #fun-project-1
     {
         display: grid;

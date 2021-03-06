@@ -88,6 +88,7 @@ p
 #main-header
 {
     align-self: center;
+    justify-self: center;
     text-align: center;
     font-size: 2rem;
     
@@ -361,11 +362,11 @@ header
 {
     display: grid;
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
     grid-template-areas: "header-h1 header-h1 header-h1 header-h1"
                          "about projects contact fun";
-    grid-template-rows: 0.5fr 0.5fr;
-    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 header h1
 {
@@ -403,7 +404,7 @@ header h1
 
     #main-header
     {
-        display: none;
+        font-size: 25px;
     }
 
     /* re-style project grids */
@@ -416,7 +417,7 @@ header h1
                              "website-image1"
                              "website-image2"
                              "project1-description";
-        grid-template-rows: 10% 30% 30% 30% auto;
+        grid-template-rows: 10% 30% 30% 30%;
         grid-template-columns: 1fr;
     }
 
@@ -424,6 +425,7 @@ header h1
     {
         max-height: 90%;
         max-width: 100%;
+        width: 90%;
         align-self: center;
         justify-self: center;
     }
@@ -445,7 +447,7 @@ header h1
                             "bone-img-1"
                             "bone-img-2"
                             "project2-description";
-        grid-template-rows: 10% 30% 30% 30%auto;
+        grid-template-rows: 10% 30% 30% 30%;
         grid-template-columns: 1fr;
     }
 
@@ -475,7 +477,7 @@ header h1
         grid-template-areas: "project3-header"
                             "britney-img"
                             "project3-description";
-        grid-template-rows: 10% 30% 70% auto;
+        grid-template-rows: 10% 30% 70%;
         grid-template-columns: 1fr;
     }
 
@@ -497,6 +499,11 @@ header h1
 
 @media screen and (min-width : 320px) and (max-width : 375px) 
 {
+    header h1
+    {
+        font-size: 25px;
+    }
+
     #fun-project-1 p
     {
         font-size: 15px;
@@ -510,5 +517,11 @@ header h1
     #fun-project-3 p
     {
         font-size: 15px;
+    }
+
+    .project-header
+    {
+        margin: 2rem;
+        font-size: 20px;
     }
 }

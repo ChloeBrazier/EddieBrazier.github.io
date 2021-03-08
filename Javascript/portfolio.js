@@ -38,3 +38,8 @@ for(let i = 0; i < previews.length; i++)
     }
     
 }
+
+//load mobile page 
+if (screen.width <= 500) {
+    document.location = "index-mobile.html";
+}

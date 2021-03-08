@@ -326,7 +326,7 @@ header h1
 {
     grid-area: projects-header;
 }
-#placeholder-preview
+#vr-preview
 {
     grid-area: project1;
 }
@@ -377,7 +377,7 @@ header h1
 
 /* -------- Responsive grid styling -------- */
 
-@media screen and (min-width : 320px) and (max-width : 1350px) 
+@media screen and (min-width : 320px) and (max-width : 1000px) 
 {
     /* header and footer */
     header
@@ -398,6 +398,7 @@ header h1
                             "about"
                             "projects"
                             "footer";
+        /* grid-template-rows: 10% 40% 40% 10%; */
         grid-template-columns: 1fr;
     }
 

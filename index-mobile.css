@@ -1,0 +1,249 @@
+/* Header Styling */
+h1
+{
+    color: #f0faf5;
+    background-color: black;
+    margin: 0px;
+    padding: 1rem 0;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+}
+
+header a
+{
+    color: #f0faf5;
+    background-color: black;
+    border: 0.2rem solid #3b403d;
+    border-left: 0px;
+    border-bottom: 0px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    padding: 1rem 0;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.5rem;
+}
+
+header a:hover
+{
+    animation-name: hover-link;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+/*Project Preview Styling */
+
+#projects-header
+{
+    margin: 2rem;
+    align-self: center;
+    text-align: center;
+}
+
+#project-previews
+{
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.project-preview
+{
+    padding: 0px;
+    margin: 10%;
+    max-height: 20%;
+}
+
+.project-preview img
+{
+    border: 0.2rem solid black;
+    background-color: #00CE7D;
+    width: 100%;
+    height: 100%;
+}
+
+.preview-title
+{
+    color: black;
+    background-color: #00CE7D;
+    box-sizing: border-box;
+    border: 0.2rem solid black;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+/* Body Styling */
+
+body
+{
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #f0faf5;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h2
+{
+    font-family: 'Prompt', sans-serif;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer styling */
+
+footer
+{
+    background-color: black;
+    color: #f0faf5;
+    border-top: 0.2rem solid #3b403d;
+}
+
+footer h2
+{
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: 'Prompt', sans-serif;
+}
+
+footer i
+{
+    color: #00CE7D;
+    font-size: 2rem;
+}
+
+footer a
+{
+    font-size: 2rem;
+    font-family: 'Prompt', sans-serif;
+    margin: 1rem;
+    text-decoration: none;
+    color: #00CE7D;
+}
+
+footer a:hover
+{
+    text-decoration: none;
+    color: #f0faf5;
+}
+
+/* About section Styling */
+#about-contents img
+{
+    max-height: 75%;
+    max-width: 75%;
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    border: 0.2rem solid black;
+}
+
+#about-contents p
+{
+    font-size: 1.2rem;
+    margin: 10%;
+    background-color: #00CE7D;
+    border: 0.2rem solid black;
+    padding: 1.5rem;
+}
+
+#about h2
+{
+    align-self: center;
+    text-align: center;
+}
+
+#about-contents
+{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "about-img"
+                         "about-text";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr;
+}
+#about img
+{
+    grid-area: about-img;
+}
+#about-contents p
+{
+    grid-area: about-text;
+}
+
+/* Grid Styling - Header */
+
+header
+{
+    display: grid;
+    width: 100vw;
+    height: 15vh;
+    grid-template-areas: "header-h1 header-h1 header-h1 header-h1"
+                         "about projects contact fun";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+header h1
+{
+    grid-area: header-h1;
+}
+#about-link
+{
+    grid-area: about;
+}
+#projects-link
+{
+    grid-area: projects;
+}
+#contact-link
+{
+    grid-area: contact;
+}
+#fun-link
+{
+    grid-area: fun;
+}
+
+@media screen and (min-width : 320px) and (max-width : 1000px) 
+{
+    /* header and footer */
+    header
+    {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    #main-header
+    {
+        font-size: 25px;
+    }
+
+    .project-preview
+    {
+        justify-self: center;
+        align-content: center;
+        max-height: 100%;
+        max-width: 80%;
+    }
+    
+}
+
+@media screen and (min-width : 320px) and (max-width : 500px) 
+{
+    header h1
+    {
+        font-size: 25px;
+    }
+
+    #about-contents p 
+    {
+        font-size: 1rem;
+    };
+}

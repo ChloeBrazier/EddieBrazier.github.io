@@ -149,7 +149,8 @@ footer a:hover
 #about-contents p
 {
     font-size: 1.2rem;
-    margin: 10%;
+    margin: 8%;
+    max-height: 100%;
     background-color: #00CE7D;
     border: 0.2rem solid black;
     padding: 1.5rem;

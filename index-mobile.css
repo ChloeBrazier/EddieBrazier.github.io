@@ -107,6 +107,22 @@ p
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* scrollbars */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #00CE7D;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+}
+
 /* Footer styling */
 
 footer
@@ -258,7 +274,7 @@ header h1
     {
         font-size: 1rem;
         max-height: 100%;
-        overflow: scroll;
+        overflow: auto;
     };
 
     .project-header

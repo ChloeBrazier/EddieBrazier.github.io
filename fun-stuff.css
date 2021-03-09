@@ -84,6 +84,22 @@ p
     z-index: -5;
 }
 
+/* scrollbars */
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #00CE7D;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: black;
+}
+
 /* main header */
 #main-header
 {
@@ -514,19 +530,19 @@ header h1
     #fun-project-1 p
     {
         font-size: 15px;
-        overflow: scroll;
+        overflow: auto;
     }
 
     #fun-project-2 p
     {
         font-size: 15px;
-        overflow: scroll;
+        overflow: auto;
     }
 
     #fun-project-3 p
     {
         font-size: 15px;
-        overflow: scroll;
+        overflow: auto;
     }
 
     .project-header

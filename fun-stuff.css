@@ -514,16 +514,19 @@ header h1
     #fun-project-1 p
     {
         font-size: 15px;
+        overflow: scroll;
     }
 
     #fun-project-2 p
     {
         font-size: 15px;
+        overflow: scroll;
     }
 
     #fun-project-3 p
     {
         font-size: 15px;
+        overflow: scroll;
     }
 
     .project-header

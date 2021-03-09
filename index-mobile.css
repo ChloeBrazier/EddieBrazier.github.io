@@ -36,8 +36,17 @@ header a:hover
 #projects-header
 {
     margin: 2rem;
+    margin-bottom: 1rem;
     align-self: center;
     text-align: center;
+}
+
+#project-info-header
+{
+    align-self: center;
+    text-align: center;
+    font-style: oblique;
+    margin-top: 0px;
 }
 
 #project-previews
@@ -88,7 +97,7 @@ a
     text-decoration: none;
 }
 
-h2
+h2, h3
 {
     font-family: 'Prompt', sans-serif;
 }
@@ -256,5 +265,10 @@ header h1
     {
         margin: 2rem;
         font-size: 20px;
+    }
+
+    #project-info-header
+    {
+        font-size: 13px;
     }
 }

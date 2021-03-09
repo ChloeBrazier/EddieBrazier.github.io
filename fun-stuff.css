@@ -85,17 +85,17 @@ p
 }
 
 /* scrollbars */
-::-webkit-scrollbar
+.fun-project::-webkit-scrollbar
 {
     width: 10px;
 }
 
-::-webkit-scrollbar-track
+.fun-project::-webkit-scrollbar-track
 {
     background: #00CE7D;
 }
 
-::-webkit-scrollbar-thumb
+.fun-project::-webkit-scrollbar-thumb
 {
     background: black;
 }
